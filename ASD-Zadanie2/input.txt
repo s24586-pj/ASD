@@ -1,0 +1,5 @@
+Zeby lepiej zaobrazowac sobie predkosc wykonywania poszczegolnych algorytmow,
+ stopniowo zwiekszalem wielkosc tablicy. Na poczatku nie bylo widocznej sporej roznicy 
+ (do elementow). Przy tabeli z elementow juz powoli widac,
+ ze sortowanie babelkowe nie radzi sobie tak dobrze, jak quicksort (sortowanie szybkie)
+ czy heapsort (sortowanie przez kopcowanie).
