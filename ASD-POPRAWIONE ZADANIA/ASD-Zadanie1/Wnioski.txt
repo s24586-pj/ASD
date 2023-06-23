@@ -1,0 +1,26 @@
+Żeby lepiej zaobrazować sobie prędkość wykonywania poszczególnych algorytmów,
+ stopniowo zwiększałem wielkość tablicy. Na początku nie było widocznej sporej różnicy 
+ (do 1000 elementów). Przy tabeli z 10 000 elementów już powoli widać,
+ że sortowanie bąbelkowe nie radzi sobie tak dobrze, jak quicksort (sortowanie szybkie)
+ czy heapsort (sortowanie przez kopcowanie).
+ Przy tabeli 50 000 elementowej pierwszy raz zastanowiłem się,
+ czy przypadkiem program się nie zawiesił, ponieważ sortowanie bąbelkowe potrzebowało aż 3 minut!
+ Przy tabeli 100 000 elementowej zauważyłem pierwsze różnice pomiędzy sortowaniem szybkim a sortowaniem przez 
+ kopcowanie (3 s). Jednocześnie przeraziłem się tym, co będzie z sortowaniem bąbelkowym przy kolejnych 
+ zwiększeniach tablic.
+
+Następne podejścia zwiększały tylko różnice pomiędzy sortowaniami o algorytmach o złożoności czasowej O(n log n).
+
+
+Podsumowując:
+-Najlepiej działa algorytm quicksort dla nieposortowanej tablicy.
+-Quicksort gorzej sobie radzi jesli tablica jest odwrotnie posortowana ale jest to spowodowane tym ze pivot musi przejsć całą tablice
+dlatego też złożonośc wynosi n^2 (Przechodzi i szuka mniejszej liczby a potem dopiero ją zamienia)
+-Najgorzej zachowuje się algorytm sortowania bąbelkowego.
+-Zgodnie z oczekiwaniami, sortowanie bąbelkowe poradziło sobie najgorzej, ale nie podejrzewałem takiej różnicy w czasie.
+(Jedynie co bym zmienił w tym programie, to algorytm bąbelkowy na jakiś szybszy. Ten jest dość łatwy do napisania, ale kompletnie nie nadaje się do większych tablic.
+Teraz rozumiem, dlaczego prędkość w notacji O jest taka ważna i rozumiem strach przed algorytmem o złożoności czasowej n!)
+
+
+Sortowanie bąbelkowe działa poprzez porównywanie dwóch sąsiednich elementów i zamianę ich miejscami, 
+jeśli są one w niewłaściwej kolejności,powtarzamy ten proces do momentu az tablica będzie posortowana
